@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+body{
+	margin: 0px;
+	font-family: 'Libre Baskerville', serif;
+}
+*{
+	box-sizing: border-box;
+	margin: 0px;
+}
+.container{
+	max-width:1140px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap; 
+}
+.section-title{
+	flex: 0 0 100%;
+	max-width:100%;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.section-title h1{
+	display: inline-block;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: rgb(99,95,95);
+	margin:0 0 10px;
+	position: relative;
+}
+/*.section-title h1::before{
+	content: '';
+	left: 15%;
+	position: absolute;
+	height: 2px;
+	right:3px;
+	background-color:#febd01; 
+	bottom:0px;
+}
+*/
+/*rgb(99,95,95);*/
+/*header section*/
+header{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	border-bottom: 1px solid #000000;
+	padding: 0px 15px;
+	z-index: 10;
+}
+
+header .row{
+	justify-content: space-between;
+	align-items: center;
+}
+header .myname a{
+	text-decoration: none;
+	font-size:22px;
+	font-weight: 600;
+	color:#000000;
+	text-transform: uppercase;
+	position: relative;
+}
+header .navbar ul{
+list-style: none;
+padding: 0px
+margin:0px;
+}
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 35px
+}
+header .navbar ul li a{
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 72px;
+	color:#000000;
+	display: block;
+	font-weight: 800;
+	position: relative;
+}
+header .navbar ul li a::before{
+	content:''; 
+	height:3px;
+	background-color: #000000;
+	width: 0%;
+	position: absolute;
+	right: : 0px;
+	bottom: -1px;
+	transition: all .5s ease;
+}
+header .navbar ul li a:hover::before{
+	width: 100%;
+	left:0;
+}
+header .navbar ul li a.active::before{
+	width: 100%;
+	left:0;
+}
+/*home section*/
+.home{
+	min-height: 100vh;
+	/*background-image: url("Asma Saleh photo.jpg");*/
+	background-color: rgb(164,164,164);
+	background-size:cover;
+	background-position: center;
+	padding: 15px;
+}
+.home .img{
+	width:400px;
+	height:190px;
+	position: absolute;
+	margin-left: 1000px;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	border: 3px solid #000000;
+}
+.home .row{
+	min-height: 100vh
+
+}
+.home .homecontent{
+	flex:0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	/*margin-top: 200px;*/
+
+}
+.home .homecontent .block{
+	flex: 0 0 75%;
+	max-width: 75%;
+	padding-left: 35px;
+	border-left: 5px solid #000000;	
+}
+.home .homecontent .block h6{
+	color: #000000;
+	font-size:18px;
+	font-weight: 500px;
+	margin:0;
+	padding: 0;
+
+}
+.home .homecontent .block h5{
+	color: #000000;
+	font-size:30px;
+	font-weight: 500px;
+	margin:0 ;
+	padding: 0;
+}
+.home .homecontent .block h3{	
+	color: #000000;
+	font-size:50px;
+	font-weight: 600px;
+	margin:0 0 10px;
+	padding: 0;
+}
+.home .homecontent .block .CVbtn{
+	padding-top: 20px;
+}
+.home .homecontent .block .CVbtn a{
+     border-radius: 4px;
+     color: #000000;
+     border: 1px solid #000000;
+     padding:12px 25px;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 14px;
+     text-transform: uppercase;
+     font-weight: 600;
+     transition: all .5s ease;
+     background-color: transparent;
+}
+.home .homecontent .block .CVbtn a:hover{
+     background-color: #000000;
+     color: rgb(99,95,95);
+}
+/*about me section*/
+.about-me{
+	padding: 100px 15px;
+}
+
+.about-me .section-title p.small{
+	display:block;
+	font-size: 14px;
+	color: rgb(99,95,95);
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.about-me .about-content .img{
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	
+}
+.about-me .about-content .img img{
+	width: 50%;
+	display: block;
+	margin-left: 220px;
+}
+.about-me .about-content .text{
+	flex: 0 0 66.66%;
+	max-width: 66.66%;
+	padding-left: 35px; 
+}
+.about-me .about-content .text h4{
+	font-size: 25px;
+	font-weight: 600;
+	margin: 0 0 5px;
+	color: #000000;
+}
+.about-me .about-content .text h6{
+	font-size: 18px;
+	font-weight: 800;
+	margin: 0 0 20px;
+	color: rgb(99,95,95);
+}
+span{
+	color:#000000;
+}
+.about-me .about-content .text .info{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about-me .about-content .text .info .list{
+	flex: 0 0 calc(50% - 15px);
+	max-width: calc(50% - 15px);
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid rgb(99,95,95);
+	padding-bottom: 10px;
+}
+.about-me .about-content .text .info .list label{
+	padding-right: 10px;
+	color: #000000;
+	font-weight: 600;
+	font-size: 15px;
+}
+.about-me .about-content .text .info .list p{
+	margin-left:0;
+	color: rgb(99,95,95);
+	font-weight: 800;
+}
+.about-me .about-content .text .social-link{
+	padding-top: 30px;
+}
+.about-me .about-content .text .social-link a{
+	height: 30px;
+	width: 30px;
+	background-color: #000000;
+	display: inline-block;
+	border-radius: 3px;
+	border: 1px solid #000000;
+	line-height: 28px;
+	text-align: center;
+	margin: 0 1px;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.about-me .about-content .text .social-link a:hover{
+	background-color: transparent;
+}
+.about-me .about-content .text .social-link a .fa{
+	color: #ffffff;
+	font-size: 12px;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.about-me .about-content .text .social-link a:hover .fa{
+	color:#000000;
+}
+/*End about me*/
+/*Start portfolio*/
+.portfolio{
+	background-color: rgb(240,240,240);
+	padding: 100px 7px;
+}
+.portfolio .section-title h1:before{
+	left: 30%;
+}
+.portfolio .filter{
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-bottom: 25px;
+}
+.portfolio .filter ul{
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.portfolio .filter ul li{
+	color: #000000;
+	font-weight: 500;
+	font-size: 16px;
+	display: inline-block;
+	margin: 0px 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.portfolio .filter ul li.active{
+	color:#febd01;
+	border-bottom: 2px solid #febd01;
+}
+.portfolio .portfolio-gallery{
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+}
+.portfolio .portfolio-gallery .item{
+	flex: 33.33% ;
+	max-width: 33.33%;
+	position: relative;
+	padding: 8px;
+}
+.portfolio .portfolio-gallery .item .inner{
+	position: relative;
+}
+.portfolio .portfolio-gallery .item img{
+	width: 100%;
+	display: block;
+}
+.portfolio .portfolio-gallery .item .overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 10;
+	display: none;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.portfolio .portfolio-gallery .item:hover .overlay{
+	display: flex;
+	}
+.portfolio .portfolio-gallery .item .overlay .fa{
+	height: 50px;
+	width: 50px;
+	background-color: #febd01;
+	color: rgb(240,240,240);
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	
+}
+.portfolio .portfolio-gallery .item:hover .overlay .fa{
+	-webkit-animation: galleryIcon .8s ease;
+	animation: galleryIcon .8s ease;
+}
+@keyframes galleryIcon{
+	0%{
+		transform: translateY(-20px);opacity:0;
+	}
+	100%{
+		transform: translateY(0);opacity: 1;
+	}
+}
+.portfolio .portfolio-gallery .item .overlay h4{
+	font-size: 25px;
+	color: rgb(240,240,240);
+	font-weight: 600;
+	margin-top: 15px;
+	
+}
+.portfolio .portfolio-gallery .item:hover .overlay h4{
+	-webkit-animation: galleryText .8s ease;
+	animation: galleryText .8s ease;
+}
+@keyframes galleryText{
+	0%{
+		transform: translateY(20px);opacity:0;
+	}
+	100%{
+		transform: translateY(0);opacity: 1;
+	}
+}
+/*End portfolio*/
