@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio Template</title>
+		<link rel="stylesheet" href="portfoliostyle.css">
+		</head>
+		<body>
+			<!--start header-->
+			<header>
+				<div class="container">
+				<div class="row">
+				<div class="myname">
+					<a href="" class="name">Asma Saleh</a>
+				</div>
+				<div class="navbar">
+					<ul>
+						<li><a href="" class="active">Home</a></li>
+						<li><a href="">About me</a></li>
+						<li><a href="">Portfolio</a></li>
+						<li><a href="">Contact me</a></li>
+					</ul>
+				</div>
+				</div>	
+				</div>
+			</header>
+			<!--End header-->
+			<!--start home-->
+			<section class="home">
+				<img src="Asma Saleh photo.jpg" class="img">
+				<div class="container">
+				<div class="row">
+					<div class="homecontent">
+					<div class="block">
+						<h6>Hello World!</h6>
+						<h5>My Name Is Asma Saleh</h5>
+						<h3>Computer Engineer</h3>
+						<div class="CVbtn">
+						<a href="">Download CV</a>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+			</section>
+			<!--end home-->
+			<!--start about me-->
+			<section class="about-me">
+				<div class="container">
+					<div class="row">
+						<div class="section-title">
+							<h1>About Me</h1>
+				<p class="small"><b>Informatin About Me</b></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="about-content">
+						<div class="row">
+						<div class="img">
+							<img src="Asma Saleh photo.jpg"/>
+						</div>
+						<div class="text">
+							<h4>Asma Saleh Alrubaie</h4>
+							<h6>Fresh <span> Computer Engineering</span> graduate from <span> Saudi Arabia</span></h6>
+							<div class="info">
+								<div class="list">
+								<label>Residence:</label>
+								<p>Saudi Arabia</p>
+							    </div>
+							    <div class="list">
+								<label>Birthday:</label>
+								<p>March 15, 1996</p>
+							    </div>
+							    <div class="list">
+								<label>Email:</label>
+								<p>i.asmasaleh111@gmail.com</p>
+							    </div>
+							    <div class="list">
+								<label>phone:</label>
+								<p>+966-555722174</p>
+							    </div>
+							</div>
+							<!--social-link-->
+							<div class="social-link">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-linkedin"></i></a>
+					<a href=""><i class="fa fa-instagram"></i></a>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end about me-->
+			<!--Start portfolio-->
+			<section class="portfolio">
+				<div class="container">
+					<div class="row">
+						<div class="section-title text-center">
+							<h1>Latest Works</h1>
+						</div>
+					</div>
+						<div class="row">
+							<div class="filter">
+								<ul id="filter-btns">
+									<li class="active" data-target="all">All</li>
+									<li data-target="web-design">web design</li>
+									<li data-target="programming">programming</li>
+									<li data-target="Hardware-project">Hardware projects</li>
+								</ul>
+							</div>
+						</div>
+				<div class="row">
+					<div class="portfolio-gallery">
+
+						<div class="item" data-id="web-design">
+							<div class="inner">
+							<img src="Asma Saleh photo.jpg" alt="portfolio"/>
+							<div class="overlay">
+								<span class="fa fa-plus"></span>
+								<h4>web design</h4>
+							</div>
+						</div>
+						</div>
+			<div class="item" data-id="programming">
+				<div class="inner">
+				<img src="Asma Saleh photo.jpg" alt="portfolio"/>
+				<div class="overlay">
+				<span class="fa fa-plus"></span>
+				<h4>programming</h4>
+					</div>
+				</div>
+					</div>
+			<div class="item" data-id="Hardware-project">
+				<div class="inner">
+				<img src="Asma Saleh photo.jpg" alt="portfolio"/>
+				<div class="overlay">
+				<span class="fa fa-plus"></span>
+				<h4>Hardware projects</h4>
+					</div>
+				</div>
+					</div>
+
+
+					</div>
+				</div>
+				</div>
+				
+			</section>
+			<!--End portfolio-->
+<!--start-->
+		<script src="script.js"></script>
+		</body>
+</html>
